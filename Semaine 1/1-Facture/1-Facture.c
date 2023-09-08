@@ -7,8 +7,8 @@
 */
 
 #define _CRT_SECURE_NO_WARNINGS
-#include <stdio.h> // #include <stdio.h> pour les fonctions d'entrée/sortie en C
-#include <stdlib.h> // #include <stdio.h> pourl la fonction `system()`
+#include <stdio.h> // #include <stdio.h> pour les fonctions d'entrée/sortie
+#include <stdlib.h> // Pour les fonctions d'entrée/sortie et la fonction `system()`
 
 int main(void) {
     // Taux de taxes et réduction
