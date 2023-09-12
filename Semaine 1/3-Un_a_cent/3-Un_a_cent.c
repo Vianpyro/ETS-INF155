@@ -22,9 +22,8 @@ int main(void) {
         printf("Entrez une valeur comprise entre %d et %d (inclus) : ", VALEUR_MIN, VALEUR_MAX);
         scanf_s("%d", &valeur);
 
-        if (valeur >= VALEUR_MIN && valeur <= VALEUR_MAX) {
+        if (valeur >= VALEUR_MIN && valeur <= VALEUR_MAX) 
             break;
-        }
         
         printf("Erreur, cette valeur (%d) n'est pas comprise entre %d et %d!\n", valeur, VALEUR_MIN, VALEUR_MAX);
     }
