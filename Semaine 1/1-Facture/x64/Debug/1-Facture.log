@@ -1,6 +1,0 @@
-﻿  1-Facture.c
-C:\Users\Vian School\OneDrive - ETS\Documents\2023-automne\INF155\Semaine 1\1-Facture\1-Facture.c(37,12): warning C4778: 'printf' : unterminated format string '%\n'
-C:\Users\Vian School\OneDrive - ETS\Documents\2023-automne\INF155\Semaine 1\1-Facture\1-Facture.c(42,16): warning C4778: 'printf' : unterminated format string '%\n'
-C:\Users\Vian School\OneDrive - ETS\Documents\2023-automne\INF155\Semaine 1\1-Facture\1-Facture.c(7,11): warning C4305: 'initializing': truncation from 'double' to 'float'
-C:\Users\Vian School\OneDrive - ETS\Documents\2023-automne\INF155\Semaine 1\1-Facture\1-Facture.c(8,11): warning C4305: 'initializing': truncation from 'double' to 'float'
-  1-Facture.vcxproj -> C:\Users\Vian School\OneDrive - ETS\Documents\2023-automne\INF155\Semaine 1\x64\Debug\1-Facture.exe

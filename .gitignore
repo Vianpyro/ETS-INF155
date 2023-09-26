@@ -2,21 +2,6 @@
 *.doc
 *.docx
 
-# Visual Studio files
-*.vcxproj
-*.filters
-*.user
-*.sln
-*.vsidx
-*.suo
-*.ipch
-
-# Other
-*.db
-*.log
-*.tlog
-*.recipe
-
 # Prerequisites
 *.d
 
