@@ -18,7 +18,7 @@ int main(void) {
     int valeur;
 
     printf("Entrez un nombre: ");
-    scanf_s("%d", &valeur);
+    scanf("%d", &valeur);
 
     printf("%d! vaut %d.", valeur, factoriel(valeur));
 

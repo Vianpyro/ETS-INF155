@@ -14,7 +14,7 @@ int main(void) {
     float note;
 
     printf("Entrez une note (entre %d et %d): ", note_min, note_max);
-    scanf_s("%f", &note);
+    scanf("%f", &note);
 
     note_litterale(note);
 

@@ -21,7 +21,7 @@ int main(void) {
     assert(nbr_jours_max(2001, 2) == 28);
 
     printf("Entrez un mois et une annee: ");
-    scanf_s("%d%d", &mois, &annee);
+    scanf("%d%d", &mois, &annee);
     
     printf("Il y'a %d jour au mois %s %d.\n", nbr_jours_max(annee, mois), mois_litteral[mois - 1], annee);
 

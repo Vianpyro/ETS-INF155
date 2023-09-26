@@ -11,13 +11,13 @@ int main(void) {
     int x, y, z, lemax;
 
     printf("Quelle est la premiere valeur?: ");
-    scanf_s("%d", &x);
+    scanf("%d", &x);
 
     printf("Quelle est la deuxieme valeur?: ");
-    scanf_s("%d", &y);
+    scanf("%d", &y);
 
     printf("Quelle est la troisiemevaleur?: ");
-    scanf_s("%d", &z);
+    scanf("%d", &z);
 
     lemax = max_des_trois(x, y, z);
 

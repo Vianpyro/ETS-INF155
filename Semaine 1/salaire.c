@@ -1,18 +1,18 @@
 /*
-	Écrivez une fonction "main" qui permet de calculer et afficher le salaire d'un employé.
-	Pour ce faire, déclarez trois variables;
+	ï¿½crivez une fonction "main" qui permet de calculer et afficher le salaire d'un employï¿½.
+	Pour ce faire, dï¿½clarez trois variables;
 	- `nbr_heures`: entier
-	- `taux_horaire`, `salaire`: réels.
+	- `taux_horaire`, `salaire`: rï¿½els.
 	Saisissez d'abord au clavier
-		le nombre d'heures travaillées par l'employé (une valeur que vous mettez dans nbr_heures)
+		le nombre d'heures travaillï¿½es par l'employï¿½ (une valeur que vous mettez dans nbr_heures)
 		et son taux horaire (une valeur que vous mettez dans taux_horaire).
 	Ensuite, calculez le salaire (une valeur que vous mettez dans salaire).
-	Finalement, affichez le salaire à l'écran.
+	Finalement, affichez le salaire ï¿½ l'ï¿½cran.
 */
 
 #define _CRT_SECURE_NO_WARNINGS
-#include <stdio.h> // #include <stdio.h> pour les fonctions d'entrée/sortie
-#include <stdlib.h> // Pour les fonctions d'entrée/sortie et la fonction `system()`
+#include <stdio.h> // #include <stdio.h> pour les fonctions d'entrï¿½e/sortie
+#include <stdlib.h> // Pour les fonctions d'entrï¿½e/sortie et la fonction `system()`
 
 int main(void) {
 	int nbr_heures;
@@ -20,10 +20,10 @@ int main(void) {
 		salaire;
 
 	printf("Nombre d'heures de travail: ");
-	scanf_s("%d", &nbr_heures);
+	scanf("%d", &nbr_heures);
 
 	printf("Taux horaire: ");
-	scanf_s("%f", &taux_horaire);
+	scanf("%f", &taux_horaire);
 
 	salaire = nbr_heures * taux_horaire;
 

@@ -11,7 +11,7 @@ int main(void) {
     int a, b, c, d, lemax;
 
     printf("Entrez quatres valeurs: ");
-    scanf_s("%d%d%d%d", &a, &b, &c, &d);
+    scanf("%d%d%d%d", &a, &b, &c, &d);
 
     lemax = max_des_quatre(a, b, c, d);
 

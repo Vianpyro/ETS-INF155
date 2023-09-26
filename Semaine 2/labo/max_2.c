@@ -11,10 +11,10 @@ int main(void) {
     int x, y, lemax;
 
     printf("Quelle est la premiere valeur?: ");
-    scanf_s("%d", &x);
+    scanf("%d", &x);
 
     printf("Quelle est la deuxieme valeur?: ");
-    scanf_s("%d", &y);
+    scanf("%d", &y);
 
     lemax = max_des_deux(x, y);
 

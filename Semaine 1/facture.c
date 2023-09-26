@@ -1,17 +1,17 @@
 /*
-    Écrire un programme qui calcule le montant d’une facture pour des achats faits à la COOP ETS.
-    Pour chaque item acheté, on doit demander la quantité et le prix unitaire du produit.
-    Après chaque item entré, le programme va demander si le client a d’autres items à entrer.
-    La COOP offre 10% de réduction si le montant total des achats dépasse $100.00.
+    ï¿½crire un programme qui calcule le montant dï¿½une facture pour des achats faits ï¿½ la COOP ETS.
+    Pour chaque item achetï¿½, on doit demander la quantitï¿½ et le prix unitaire du produit.
+    Aprï¿½s chaque item entrï¿½, le programme va demander si le client a dï¿½autres items ï¿½ entrer.
+    La COOP offre 10% de rï¿½duction si le montant total des achats dï¿½passe $100.00.
     On applique ensuite les taxes (TPS & TVQ) de 15%.
 */
 
 #define _CRT_SECURE_NO_WARNINGS
-#include <stdio.h> // #include <stdio.h> pour les fonctions d'entrée/sortie
-#include <stdlib.h> // Pour les fonctions d'entrée/sortie et la fonction `system()`
+#include <stdio.h> // #include <stdio.h> pour les fonctions d'entrï¿½e/sortie
+#include <stdlib.h> // Pour les fonctions d'entrï¿½e/sortie et la fonction `system()`
 
 int main(void) {
-    // Taux de taxes et réduction
+    // Taux de taxes et rï¿½duction
     float TAXES = 0.15;
     float REDUCTION = 0.1;
     float SEUIL_REDUCTION = 100.00;
@@ -22,29 +22,29 @@ int main(void) {
 
     // Boucle principale pour la saisie des articles
     while (continuer) {
-        // Saisie de la quantité
+        // Saisie de la quantitï¿½
         int quantite;
         printf("Quantite: ");
-        scanf_s("%d", &quantite);
+        scanf("%d", &quantite);
 
         // Saisie du prix unitaire
         float prix_unitaire;
         printf("Prix unitaire: ");
-        scanf_s("%f", &prix_unitaire);
+        scanf("%f", &prix_unitaire);
 
         // Calcul du sous-total
         sous_total += quantite * prix_unitaire;
 
-        // Saisie de la réponse de l'utilisateur pour continuer
+        // Saisie de la rï¿½ponse de l'utilisateur pour continuer
         printf("Ajouter d'autres items? [1 (oui)/0 (non)]: ");
-        scanf_s("%d", &continuer);
+        scanf("%d", &continuer);
     }
 
     // Calcul du total initial
     float total = sous_total;
     printf("Sous total: $%.2f%\n", sous_total);
 
-    // Vérification de la réduction applicable
+    // Vï¿½rification de la rï¿½duction applicable
     if (sous_total > SEUIL_REDUCTION) {
         float application_reduction = total * REDUCTION;
         printf("Reduction (%.2f%%): $%.2f%\n", REDUCTION * 100, application_reduction);
