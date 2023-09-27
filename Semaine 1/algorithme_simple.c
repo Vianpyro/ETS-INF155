@@ -1,17 +1,16 @@
 /*
-    �crire un programme qui calcule le montant d�une facture pour des achats faits � la COOP ETS.
-    Pour chaque item achet�, on doit demander la quantit� et le prix unitaire du produit.
-    Apr�s chaque item entr�, le programme va demander si le client a d�autres items � entrer.
-    La COOP offre 10% de r�duction si le montant total des achats d�passe $100.00.
+    Ecrire programme qui calcule montant facture pour des achats a la COOP ETS.
+    Pour chaque item, demander la quantitee et prix unitaire du produit.
+    Apres chaque item, demander si client a d'autres items a entrer.
+    La COOP offre 10% de reduction si le montant total des achats depasse $100.00.
     On applique ensuite les taxes (TPS & TVQ) de 15%.
 */
-
 #define _CRT_SECURE_NO_WARNINGS
-#include <stdio.h> // #include <stdio.h> pour les fonctions d'entr�e/sortie
-#include <stdlib.h> // Pour les fonctions d'entr�e/sortie et la fonction `system()`
+#include <stdio.h> // #include <stdio.h> pour les fonctions d'entree/sortie
+#include <stdlib.h> // Pour les fonctions d'entree/sortie et la fonction `system()`
 
 int main(void) {
-    // Taux de taxes et r�duction
+    // Taux de taxes et reduction
     float TAXES = 0.15;
     float REDUCTION = 0.1;
     float SEUIL_REDUCTION = 100.00;
@@ -22,7 +21,7 @@ int main(void) {
 
     // Boucle principale pour la saisie des articles
     while (continuer) {
-        // Saisie de la quantit�
+        // Saisie de la quantite
         int quantite;
         printf("Quantite: ");
         scanf("%d", &quantite);
@@ -35,19 +34,19 @@ int main(void) {
         // Calcul du sous-total
         sous_total += quantite * prix_unitaire;
 
-        // Saisie de la r�ponse de l'utilisateur pour continuer
+        // Saisie de la reponse de l'utilisateur pour continuer
         printf("Ajouter d'autres items? [1 (oui)/0 (non)]: ");
         scanf("%d", &continuer);
     }
 
     // Calcul du total initial
     float total = sous_total;
-    printf("Sous total: $%.2f%\n", sous_total);
+    printf("Sous total: $%.2f\n", sous_total);
 
-    // V�rification de la r�duction applicable
+    // Verification de la reduction applicable
     if (sous_total > SEUIL_REDUCTION) {
         float application_reduction = total * REDUCTION;
-        printf("Reduction (%.2f%%): $%.2f%\n", REDUCTION * 100, application_reduction);
+        printf("Reduction (%.2f%%): $%.2f\n", REDUCTION * 100, application_reduction);
 
         total -= application_reduction;
     }
@@ -58,7 +57,6 @@ int main(void) {
 
     // Affichage du total final
     printf("Total: $%.2f\n", total + taxes);
-
 
     system("pause");
 }
