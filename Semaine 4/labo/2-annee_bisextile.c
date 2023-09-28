@@ -1,5 +1,5 @@
 /*
-    Annee bisextile (meme exercice qu'a la semaine 2 donc copie/colle...)
+    Annee bisextile (meme exercice qu'a la semaine 3 donc copie/colle...)
 */
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
