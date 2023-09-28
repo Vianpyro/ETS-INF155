@@ -7,7 +7,7 @@
 
 #include <assert.h>
 
-#define MAX_LOOP 10000
+#define MAX_PRIME 10000
 
 int comptage(int valeur);
 int diviseurs(int valeur);
@@ -63,7 +63,7 @@ int prime(int valeur) {
 }
 
 int prime_suivant(int valeur) {
-    while (++valeur < MAX_LOOP && !prime(valeur));
+    while (++valeur < MAX_PRIME && !prime(valeur));
     return valeur;
 }
 
