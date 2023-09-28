@@ -7,6 +7,8 @@
 
 #include <assert.h>
 
+#define FFLUSH while(getchar() != '\n') {} // A inserer devant tous les scanf()!
+
 int main(void) {
     return EXIT_SUCCESS;
 }
