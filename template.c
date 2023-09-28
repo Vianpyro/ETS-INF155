@@ -10,5 +10,6 @@
 #define FFLUSH while(getchar() != '\n') {} // A inserer devant tous les scanf()!
 
 int main(void) {
+    system("pause");
     return EXIT_SUCCESS;
 }
