@@ -15,7 +15,6 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <stdlib.h>
-#include <assert.h>
 
 #define JOUR_MIN 1
 
