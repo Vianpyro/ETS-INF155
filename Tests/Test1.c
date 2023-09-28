@@ -40,12 +40,15 @@ int main(void) {
 int saisir_entier(int min, int max) {
     int valeur;
 
-    do {
+    while (1) {
         printf("Entrez un entier compris entre %d et %d: ", min, max);
         scanf("%d", &valeur);
-    } while (valeur < min || valeur > max);
 
-    return valeur;
+        if (valeur >= min && valeur <= max)
+            return valeur;
+
+        printf("Erreur! ");
+    }
 }
 
 // Declaration d'une fonction retourne le produit des chiffres d'un nombre recu
