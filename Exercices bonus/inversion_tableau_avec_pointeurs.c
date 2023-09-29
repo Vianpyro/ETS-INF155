@@ -34,7 +34,8 @@ int main() {
     }
     printf("\n");
 
-    return 0;
+    system("pause");
+    return EXIT_SUCCESS;
 }
 
 // Fonction pour inverser un tableau avec des pointeurs
