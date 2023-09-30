@@ -5,8 +5,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include <assert.h>
-
 int saisir_nombre_positif(void);
 int lire_obtenir_max(int n);
 
