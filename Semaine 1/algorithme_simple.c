@@ -59,4 +59,5 @@ int main(void) {
     printf("Total: $%.2f\n", total + taxes);
 
     system("pause");
+    return EXIT_SUCCESS;
 }

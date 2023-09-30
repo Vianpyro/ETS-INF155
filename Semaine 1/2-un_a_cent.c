@@ -29,4 +29,5 @@ int main(void) {
     printf("%d\n", valeur);
 
     system("pause");
+    return EXIT_SUCCESS;
 }
