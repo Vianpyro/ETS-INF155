@@ -9,7 +9,7 @@ int saisir_nombre_positif(void);
 int lire_obtenir_max(int n);
 
 int main(void) {
-    int n;
+    unsigned int n; // Doit etre positif
     float max;
 
     n = saisir_nombre_positif();
