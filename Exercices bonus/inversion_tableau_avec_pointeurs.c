@@ -12,8 +12,6 @@
 
 void inversion(int *debut, int *fin);
 
-#include <stdio.h>
-
 int main() {
     int tableau[] = {1, 2, 3, 4, 5};
     int longueur = sizeof(tableau) / sizeof(tableau[0]); // Calcule la longueur du tableau
