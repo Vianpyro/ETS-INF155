@@ -9,9 +9,10 @@
 
 #define FFLUSH while(getchar() != '\n') {} // A inserer devant tous les scanf()!
 
+#define PLAYER 'X'
+#define COMPUTER 'O'
+
 char board[3][3];
-const char PLAYER = 'X';
-const char COMPUTER = 'O';
 
 void reset();
 void print_board();
