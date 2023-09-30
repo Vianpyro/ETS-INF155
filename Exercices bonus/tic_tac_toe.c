@@ -22,11 +22,12 @@ char check_winner();
 void print_winner(char winner);
 
 int main(void) {
-    char winner = ' ';
+    char winner;
     char response;
 
     do {
         reset();
+        winner = ' ';
         
         while (winner == ' ' && check_free_spaces() != 0) {
             print_board();
@@ -45,7 +46,7 @@ int main(void) {
         response = tolower(response);
     } while (response == 'y');
 
-    printf("Thanks for playing!");
+    printf("Thanks for playing!\n");
     system("pause");
     return EXIT_SUCCESS;
 }
