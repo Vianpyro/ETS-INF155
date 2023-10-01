@@ -167,7 +167,6 @@ void afficher_tableau(char *tableau[], u16 longueur) {
 }
 
 void marquer(char *tableau[], u16 *longueur, char *tableau_finies[], u16 *longueur_finies) {
-    printf("%d", *longueur);
     if (*longueur < 1) {
         printf("Aucune tache en cours.\n");
         return;
