@@ -19,22 +19,25 @@
 #define MAX_TACHES 100
 #define MAX_CHAR_TACHE 100
 
-unsigned char choix(void); // Utilisation d'un unsigned char parce que besoin de peu de memoire
-void ajout(char* tableau[], unsigned short *longueur);
-void retrait(char* tableau[], unsigned short *longueur);
-void supprimer(char* tableau[], unsigned short *longueur, unsigned short index);
-void affichage(char* tableau[], unsigned short longueur, char* tableau_finies[], unsigned short longueur_finies);
-void marquer(char* tableau[], unsigned short *longueur, char* tableau_finies[], unsigned short *longueur_finies);
-void afficher_tableau(char *tableau[], unsigned short longueur);
+typedef unsigned char u8;
+typedef unsigned short u16;
+
+u8 choix(void); // Utilisation d'un unsigned char parce que besoin de peu de memoire
+void ajout(char* tableau[], u16 *longueur);
+void retrait(char* tableau[], u16 *longueur);
+void supprimer(char* tableau[], u16 *longueur, u16 index);
+void affichage(char* tableau[], u16 longueur, char* tableau_finies[], u16 longueur_finies);
+void marquer(char* tableau[], u16 *longueur, char* tableau_finies[], u16 *longueur_finies);
+void afficher_tableau(char *tableau[], u16 longueur);
 
 int main(void) {
     char* taches[MAX_TACHES];
-    unsigned short longueur_taches = 0;
+    u16 longueur_taches = 0;
 
     char* taches_finies[MAX_TACHES]; // * Si la liste devient trop grande, supprimer le plus vieil element (index 0)
-    unsigned short longueur_taches_finies = 0;
+    u16 longueur_taches_finies = 0;
 
-    unsigned char choix_utilisateur;
+    u8 choix_utilisateur;
 
     do {
         choix_utilisateur = choix();
@@ -72,8 +75,8 @@ int main(void) {
     return EXIT_SUCCESS;
 }
 
-unsigned char choix(void) {
-    unsigned char choix_utilisateur;
+u8 choix(void) {
+    u8 choix_utilisateur;
 
     do {
         printf(
@@ -95,7 +98,7 @@ unsigned char choix(void) {
     return choix_utilisateur;
 }
 
-void ajout(char *tableau[], unsigned short *longueur) {
+void ajout(char *tableau[], u16 *longueur) {
     char nouvelle_tache[MAX_CHAR_TACHE];
     
     if (*longueur >= MAX_TACHES) {
@@ -110,13 +113,13 @@ void ajout(char *tableau[], unsigned short *longueur) {
     (*longueur)++;
 }
 
-void retrait(char* tableau[], unsigned short *longueur) {
+void retrait(char* tableau[], u16 *longueur) {
     if (*longueur < 1) {
         printf("Aucune tache en cours.\n");
         return;
     }
 
-    unsigned char choix_utilisateur;
+    u8 choix_utilisateur;
 
     do {
         printf("Selectionnez le numero de la tache a supprimer: \n");
@@ -135,16 +138,16 @@ void retrait(char* tableau[], unsigned short *longueur) {
     supprimer(tableau, longueur, choix_utilisateur);
 }
 
-void supprimer(char* tableau[], unsigned short *longueur, unsigned short index) {
+void supprimer(char* tableau[], u16 *longueur, u16 index) {
     free(tableau[index]);
 
-    for (unsigned short i = index; i < (*longueur - 1); i++)
+    for (u16 i = index; i < (*longueur - 1); i++)
         tableau[i] = tableau[i + 1];
 
     (*longueur)--;
 }
 
-void affichage(char *tableau[], unsigned short longueur, char *tableau_finies[], unsigned short longueur_finies) {
+void affichage(char *tableau[], u16 longueur, char *tableau_finies[], u16 longueur_finies) {
     // Affichage des taches a faire
     if (longueur > 0) 
         printf("A faire:\n");
@@ -158,19 +161,19 @@ void affichage(char *tableau[], unsigned short longueur, char *tableau_finies[],
     afficher_tableau(tableau_finies, longueur_finies);
 }
 
-void afficher_tableau(char *tableau[], unsigned short longueur) {
-    for (unsigned short i = 0; i < longueur; i++)
+void afficher_tableau(char *tableau[], u16 longueur) {
+    for (u16 i = 0; i < longueur; i++)
         printf("%d - %s\n", i + 1, tableau[i]);
 }
 
-void marquer(char *tableau[], unsigned short *longueur, char *tableau_finies[], unsigned short *longueur_finies) {
+void marquer(char *tableau[], u16 *longueur, char *tableau_finies[], u16 *longueur_finies) {
     printf("%d", *longueur);
     if (*longueur < 1) {
         printf("Aucune tache en cours.\n");
         return;
     }
 
-    unsigned short choix_utilisateur;
+    u16 choix_utilisateur;
     char* tache_finie;
 
     do {
