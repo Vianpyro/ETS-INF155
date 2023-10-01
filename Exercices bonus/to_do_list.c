@@ -189,6 +189,11 @@ void marquer(char *tableau[], u16 *longueur, char *tableau_finies[], u16 *longue
         printf("Choix invalide! Veuillez reessayer:\n");
     } while (1);
 
+    if (longueur_finies >= MAX_TACHES) {
+        printf("La liste des taches finies est pleine, la tache finie la plus ancienne est supprimee");
+        supprimer(tableau_finies, longueur_finies, 0);
+    }
+
     tache_finie = tableau[choix_utilisateur];
     tableau_finies[*longueur_finies] = strdup(tache_finie);
     (*longueur_finies)++;
