@@ -7,7 +7,7 @@
 #include <ctype.h>
 #include <time.h>
 
-#define FFLUSH while(getchar() != '\n') {} // A inserer devant tous les scanf()!
+#define FFLUSH while(getchar() != '\n') {} // A inserer devant tous les scanf("%c", ...)!
 
 #define PLAYER 'X'
 #define COMPUTER 'O'

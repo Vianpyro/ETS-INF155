@@ -16,7 +16,7 @@
 
 #include <assert.h>
 
-#define FFLUSH while(getchar() != '\n') {} // A inserer devant tous les scanf()!
+#define FFLUSH while(getchar() != '\n') {} // A inserer devant tous les scanf("%c", ...)!
 
 #define MAX 20
 
