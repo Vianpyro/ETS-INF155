@@ -7,7 +7,7 @@
 
 #include <assert.h>
 
-#define MAX_PRIME 10000
+#define MAX_PRIME 1000
 
 int comptage(int valeur);
 int diviseurs(int valeur);
@@ -39,7 +39,7 @@ int main(void) {
     assert(prime_suivant(13) == 17);
     assert(prime_suivant(1) == 2);
 
-    for (int i = 1; i < 1000; i = prime_suivant(i)) {
+    for (int i = 1; i < MAX_PRIME; i = prime_suivant(i)) {
         printf("%d ", i);
     }
 
@@ -63,7 +63,7 @@ int prime(int valeur) {
 }
 
 int prime_suivant(int valeur) {
-    while (++valeur < MAX_PRIME && !prime(valeur));
+    while (++valeur < MAX_PRIME && !prime(valeur)) {};
     return valeur;
 }
 
