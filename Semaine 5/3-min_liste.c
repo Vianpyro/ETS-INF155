@@ -1,7 +1,6 @@
 /*
-    Auteur: <Name>
-    Date de création: <dd/mm/yyyy>
-    But du programme: <...>
+    Ecrire une fonction qui recoit en parametres un tableau d'entiers ainsi que le nombre d'elements du tableau.
+    La fonction retourne l'indice du plus petit element.
 */
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
