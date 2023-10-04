@@ -7,14 +7,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(void) {
-    int tableau[10];
+#define NB_ELEMENTS 10
 
-    for (short i = 0; i < 10; i++) {
+int main(void) {
+    int tableau[NB_ELEMENTS];
+
+    for (short i = 0; i < NB_ELEMENTS; i++) {
         tableau[i] = 10 - i;
     }
 
-    for (short i = 0; i < 10; i++) {
+    for (short i = 0; i < NB_ELEMENTS; i++) {
         printf("%d\n", tableau[i]);
     }
 
