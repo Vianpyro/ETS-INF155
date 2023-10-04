@@ -22,10 +22,9 @@ int main(void) {
 int indice_maximum(int tableau[], int longueur) {
     int index = 0;
 
-    for (int i = 1; i < longueur; i++) {
+    for (int i = 1; i < longueur; i++)
         if (tableau[i] > tableau[index])
             index = i;
-    } 
 
     return index;
 }

@@ -12,13 +12,11 @@
 int main(void) {
     int tableau[NB_ELEMENTS];
 
-    for (short i = 0; i < NB_ELEMENTS; i++) {
+    for (short i = 0; i < NB_ELEMENTS; i++)
         tableau[i] = 10 - i;
-    }
 
-    for (short i = 0; i < NB_ELEMENTS; i++) {
+    for (short i = 0; i < NB_ELEMENTS; i++)
         printf("%d\n", tableau[i]);
-    }
 
     system("pause");
     return EXIT_SUCCESS;
