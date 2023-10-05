@@ -66,7 +66,7 @@ void print_board() {
     printf(" %c | %c | %c ", board[1][0], board[1][1], board[1][2]);
     printf("\n---|---|---\n");
     printf(" %c | %c | %c ", board[2][0], board[2][1], board[2][2]);
-    printf("\n");
+    printf('\n');
 }
 
 int check_free_spaces() {

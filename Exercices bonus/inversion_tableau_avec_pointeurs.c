@@ -22,7 +22,7 @@ int main() {
     for (int i = 0; i < longueur; i++) {
         printf("%d ", tableau[i]);
     }
-    printf("\n");
+    printf('\n');
 
     inversion(debut, fin);
 
@@ -30,7 +30,7 @@ int main() {
     for (int i = 0; i < longueur; i++) {
         printf("%d ", tableau[i]);
     }
-    printf("\n");
+    printf('\n');
 
     system("pause");
     return EXIT_SUCCESS;

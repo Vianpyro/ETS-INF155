@@ -29,7 +29,7 @@ int main(void) {
 	for (int i = 700; i >= 600; i--) {
 		if (i % 7 == 0) printf("%d ", i);
 	}
-	printf("\n");
+	printf('\n');
 
 	return EXIT_SUCCESS;
 }
