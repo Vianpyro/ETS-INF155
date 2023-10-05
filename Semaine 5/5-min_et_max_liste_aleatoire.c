@@ -29,7 +29,7 @@ int main(void) {
     for (int i = 0; i < NB_ELEMENTS; i++)
         printf("%d ", tableau[i]);
 
-    printf('\n');
+    printf("\n");
 
     // Affichage des valeurs min et max
     index_min = indice_minimum(tableau, NB_ELEMENTS);

@@ -33,5 +33,5 @@ void afficher_mois(int mois) {
         case 12: printf("dec"); break;
         default: printf("n'est pas un mois valide!");
     }
-    printf('\n');
+    printf("\n");
 }
