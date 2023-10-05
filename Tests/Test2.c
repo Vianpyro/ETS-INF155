@@ -1,7 +1,7 @@
 /*
 	Auteur: VEREMME Vianney - Groupe 3
 	Date de création: 03/10/2023
-	But du programme: Exemple de conversion en devises �trang�res avec un switch..case
+	But du programme: Exemple de conversion en devises etrangeres avec un switch..case
 */
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
@@ -26,8 +26,8 @@ int main(void) {
 	assert(calcul_salaire(35.5, 45.7525, 3) == 1388.21549);
 
 	double heures, taux, brut;	//nb. d'heures, taux horaire et salaire brut
-	int  pays;					//le code-pays de la devise d�sir�e
-	unsigned char devise;		//le caract�re-devise (pour l'affichage)
+	int  pays;					//le code-pays de la devise desiree
+	unsigned char devise;		//le caractere-devise (pour l'affichage)
 
 	printf("\nEntrez les heures travaillees: ");  
 	scanf("%lf", &heures);
@@ -35,16 +35,16 @@ int main(void) {
 	printf("\nEntrez le taux horaire       : ");  
 	scanf("%lf", &taux);
 
-	//�tape 1 : Saisie et validation du code-pays
+	//Etape 1 : Saisie et validation du code-pays
 	pays = saisir_devise();
 
-	//�tape 2 : Calcul du salaire de la semaine
+	//Etape 2 : Calcul du salaire de la semaine
 	brut = calcul_salaire(heures, taux, pays);
 	
-	//�tape 3 : Choix du caract�re-devise selon le pays choisi
+	//Etape 3 : Choix du caractere-devise selon le pays choisi
 	devise = caractere_devise(pays);
 
-	//Affichage du r�sultat final
+	//Affichage du resultat final
 	printf("\nSalaire brut      : %.2lf %c\n", brut, devise);
 	system("pause");
 	return EXIT_SUCCESS;
@@ -74,9 +74,9 @@ double calcul_salaire(double heures, double taux, int pays) {
 	if (heures <= 40)
 		brut = heures * taux;
 	else
-		brut = taux * (40 + 1.5 * (heures - 40)); // calcul des heures suppl�mentaires
+		brut = taux * (40 + 1.5 * (heures - 40)); // calcul des heures supplementaires
 
-	//avec conversion si n�cessaire :
+	//avec conversion si necessaire :
 	if (pays == 2)  
 		brut /= 2.00;
 	else if (pays == 3)  
