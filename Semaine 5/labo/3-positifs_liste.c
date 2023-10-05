@@ -27,7 +27,7 @@ int posi(double tab[], int longueur, double *total) {
 
     for (int i = 0; i < longueur; i++)
         if (tab[i] > 0) {
-            positifs += 1;
+            positifs++;
             *total += tab[i];
         }
 
