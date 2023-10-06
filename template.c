@@ -4,10 +4,11 @@
     But du programme: <...>
 */
 #define _CRT_SECURE_NO_WARNINGS
+#include <assert.h>
+#include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <math.h>
-#include <assert.h>
+#include <time.h>
 
 /***************************************************************************************/
 /*                               DECLARATION DES MACROS                                */
