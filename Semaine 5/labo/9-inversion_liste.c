@@ -38,7 +38,7 @@ int main(void) {
     return EXIT_SUCCESS;
 }
 
-// Fonction d'inversion du tableau
+// Fonction d'inversion d'un tableau
 void renverser_tableau(int tableau[], int nb_elem) {
     int temp;
 
