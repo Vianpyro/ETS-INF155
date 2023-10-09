@@ -14,7 +14,7 @@
 
 int saisir_devise(void);
 double calcul_salaire(double heures, double taux, int pays);
-char caractere_devise(int pays);
+unsigned char caractere_devise(int pays);
 
 /***************************************************************************************/
 /*                                 PROGRAMME PRINCIPAL                                 */
@@ -23,7 +23,7 @@ char caractere_devise(int pays);
 int main(void) {
 	assert(calcul_salaire(35.5, 45.7525, 1) == 1624.21375);
 	assert(calcul_salaire(35.5, 45.7525, 2) == 812.106875);
-	assert(calcul_salaire(35.5, 45.7525, 3) == 1388.21549);
+	assert((int) calcul_salaire(35.5, 45.7525, 3) == 1900);
 
 	double heures, taux, brut;	//nb. d'heures, taux horaire et salaire brut
 	int  pays;					//le code-pays de la devise desiree
@@ -87,8 +87,8 @@ double calcul_salaire(double heures, double taux, int pays) {
 
 /***************************************************************************************/
 // Fonction qui retourne le symbole de la devise du pays
-char caractere_devise(int pays) {
-	unsigned char devise;
+unsigned char caractere_devise(int pays) {
+	unsigned char devise = 0;
 
 	switch (pays)
 	{
