@@ -32,8 +32,8 @@ int main(void) {
     return EXIT_SUCCESS;
 }
 
-void copier_tableau(int dest[], const int source[], int nb_elem) {
-    for (int i = 0; i < nb_elem; i++)
+void copier_tableau(int dest[], const int source[], size_t nb_elem) {
+    for (size_t i = 0; i < nb_elem; i++)
         dest[i] = source[i];
 }
 
