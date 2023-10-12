@@ -1,5 +1,8 @@
-
-
+/*
+        Auteur: VEREMME Vianney - Groupe 3
+        Date de création: 12/10/2023
+        But du programme: Avoir 100% au test 3
+*/
 // Permet de désactiver certains warnings du compilateur
 #define _CRT_SECURE_NO_WARNINGS
 
