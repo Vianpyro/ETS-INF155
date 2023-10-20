@@ -5,8 +5,6 @@
         grand element du tableau.
 */
 #define _CRT_SECURE_NO_WARNINGS
-#include <assert.h>
-#include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
