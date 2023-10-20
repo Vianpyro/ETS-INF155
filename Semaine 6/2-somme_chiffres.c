@@ -2,15 +2,14 @@
     But du programme: de saisir une chaine de caracteres et afficher la somme.
 */
 #define _CRT_SECURE_NO_WARNINGS
-#include <assert.h>
-#include <stdio.h>
-#include <stdlib.h>
+#include <stdio.h>   // Pour la fonction printf
+#include <stdlib.h>  // Pour la macro EXIT_SUCCESS et la fonction system
 
 #define MAX_CHAR 30
 
 int main(void) {
     char chaine[MAX_CHAR],
-         somme = 0;
+        somme = 0;
 
     printf("Entrez la chaine de valeurs a additionner: ");
     scanf("%s", &chaine);
