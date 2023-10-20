@@ -1,7 +1,7 @@
 /*
     Ecrire une fonction qui recoit en parametres un tableau d'entiers ainsi que
         le nombre de lignes et le nombre de colonnes du tableau. La fonction
-        retourne le plus petit element du tableau.
+        retourne le plus grand element du tableau.
 */
 #define _CRT_SECURE_NO_WARNINGS
 #include <assert.h>
