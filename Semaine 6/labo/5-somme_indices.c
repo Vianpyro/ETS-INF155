@@ -7,6 +7,7 @@
         10 lignes et 20 colonnes.
 */
 #define _CRT_SECURE_NO_WARNINGS
+#include <stdint.h>  // Pour le uint8_t, allant de 0 a 255: optimisation pour le fun
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -22,8 +23,8 @@ int main(void) {
         copie[NB_LIGNES][NB_COLONNES];
 
     // Remplissage
-    for (int i = 0; i < NB_LIGNES; i++) {
-        for (int j = 0; j < NB_COLONNES; j++) {
+    for (uint8_t i = 0; i < NB_LIGNES; i++) {
+        for (uint8_t j = 0; j < NB_COLONNES; j++) {
             tableau[i][j] = i + j;
         }
     }
@@ -38,16 +39,16 @@ int main(void) {
 
 void copier_tableau_2D(int destination[NB_LIGNES][NB_COLONNES],
                        int source[NB_LIGNES][NB_COLONNES]) {
-    for (int i = 0; i < NB_LIGNES; i++) {
-        for (int j = 0; j < NB_COLONNES; j++) {
+    for (uint8_t i = 0; i < NB_LIGNES; i++) {
+        for (uint8_t j = 0; j < NB_COLONNES; j++) {
             destination[i][j] = source[i][j];
         }
     }
 }
 
 void affichage_tableau_2d(int tableau[NB_LIGNES][NB_COLONNES]) {
-    for (int i = 0; i < NB_LIGNES; i++) {
-        for (int j = 0; j < NB_COLONNES; j++) {
+    for (uint8_t i = 0; i < NB_LIGNES; i++) {
+        for (uint8_t j = 0; j < NB_COLONNES; j++) {
             printf(" %3d,", tableau[i][j]);
         }
         printf("\n");
