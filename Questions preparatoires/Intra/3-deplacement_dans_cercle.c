@@ -42,7 +42,7 @@ int main(void) {
         pos_y += deplacement_y;
 
         // Verification que le deplacement est non-nul
-        if (deplacement_x != 0 || deplacement_y != 0) {
+        if (deplacement_x || deplacement_y) {
             nombre_deplacements++;
         }
     }
