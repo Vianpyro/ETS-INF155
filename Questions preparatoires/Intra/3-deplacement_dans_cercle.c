@@ -25,8 +25,8 @@ int main(void) {
     // Initialisation des variables
     int rayon,
         pos_x = 0,
-        pos_y = 0,
-        nombre_deplacements = 0;
+        pos_y = 0;
+    long long nombre_deplacements = 0;
 
     // Initialisation de l'aleatoire
     srand(time(NULL));
