@@ -1,3 +1,6 @@
+/*
+    Comparaison entre optimisation RAM et CPU
+*/
 #include <limits.h>
 #include <stdint.h>
 #include <stdio.h>
@@ -5,8 +8,9 @@
 #include <time.h>
 
 int nb_termes1(int max) {
-    int somme = 0, i;
-    for (i = 1; (somme += i) < max; i++)
+    int somme = 0;
+    uint16_t i;
+    while ((somme += i++) < max)
         ;
     return i;
 }
@@ -14,14 +18,6 @@ int nb_termes1(int max) {
 int nb_termes2(int max) {
     int somme = 0, i = 1;
     while ((somme += i++) < max)
-        ;
-    return i;
-}
-
-int nb_termes3(int max) {
-    int somme = 0;
-    uint16_t i;
-    for (i = 1; (somme += i) < max; i++)
         ;
     return i;
 }
