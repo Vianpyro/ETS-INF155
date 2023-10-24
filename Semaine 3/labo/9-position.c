@@ -1,5 +1,5 @@
 /* 
-    Fonction reçoit 2 entiers ("nombre" et "pos") et renvoie le chiffre à la position "pos" donnée du "nombre".
+    Fonction reçoit 2 entiers ("nombre" et "pos") et renvoie le chiffre a la position "pos" donnee du "nombre".
     Ex: appel avec nombre "15670" et la position "2", fonction retourne "7".
 */
 #define _CRT_SECURE_NO_WARNINGS

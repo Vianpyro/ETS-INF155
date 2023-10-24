@@ -1,6 +1,6 @@
 /*
     Auteur: <Name>
-    Date de création: <dd/mm/yyyy>
+    Date de creation: <dd/mm/yyyy>
     But du programme: <...>
 */
 #define _CRT_SECURE_NO_WARNINGS

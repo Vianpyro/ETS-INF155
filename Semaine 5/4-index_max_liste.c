@@ -1,5 +1,5 @@
 /*
-    Ecrire une fonction qui recoit en parametres un tableau d'entiers ainsi que le nombre d'éléments du tableau.
+    Ecrire une fonction qui recoit en parametres un tableau d'entiers ainsi que le nombre d'elements du tableau.
     La fonction retourne l'indice du plus grand element.
 */
 #define _CRT_SECURE_NO_WARNINGS

@@ -17,7 +17,7 @@ int main(void) {
 }
 
 void afficher_mois(int mois) {
-    // Ne pas oublier les "break" après chaque affichage car pas de return donc fonction continue!
+    // Ne pas oublier les "break" apres chaque affichage car pas de return donc fonction continue!
     switch (mois) {
         case 1: printf("jan"); break;
         case 2: printf("fev"); break;

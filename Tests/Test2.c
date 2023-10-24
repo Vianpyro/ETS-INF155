@@ -1,6 +1,6 @@
 /*
         Auteur: VEREMME Vianney - Groupe 3
-        Date de création: 03/10/2023
+        Date de creation: 03/10/2023
         But du programme: Exemple de conversion en devises etrangeres avec un switch..case
 */
 #define _CRT_SECURE_NO_WARNINGS

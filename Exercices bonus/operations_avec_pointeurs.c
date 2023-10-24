@@ -4,7 +4,7 @@
     Instructions :
         - Declarer et initialiser deux variables entieres, par exemple int a et int b.
         - Declarer deux pointeurs vers des entiers, par exemple int *ptr_a et int *ptr_b, et les initialiser pour qu'ils pointent respectivement vers a et b.
-        - Utiliser les pointeurs pour effectuer les operations suivantes et affichez les résultats à chaque étape :
+        - Utiliser les pointeurs pour effectuer les operations suivantes et affichez les resultats a chaque etape :
             - Additionner a et b en utilisant les pointeurs, puis afficher le resultat.
             - Soustraire b de a en utilisant les pointeurs, puis afficher le resultat.
             - Multiplier a par 2 en utilisant le pointeur ptr_a, puis afficher le resultat.
