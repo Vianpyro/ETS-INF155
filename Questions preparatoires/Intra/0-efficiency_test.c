@@ -7,6 +7,7 @@
 #include <stdlib.h>
 #include <time.h>
 
+// Mode: optimisation de la RAM
 int nb_termes1(int max) {
     int somme = 0;
     uint16_t i;
@@ -15,6 +16,7 @@ int nb_termes1(int max) {
     return i;
 }
 
+// Mode: optimisation du CPU
 int nb_termes2(int max) {
     int somme = 0, i = 1;
     while ((somme += i++) < max)
