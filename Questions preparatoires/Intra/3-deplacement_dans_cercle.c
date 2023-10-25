@@ -35,16 +35,26 @@ int main(void) {
     scanf("%d", &rayon);
 
     while (position_valide(pos_x, pos_y, rayon)) {
-        int deplacement_x = nombre_aleatoire(-1, 1);
-        int deplacement_y = nombre_aleatoire(-1, 1);
+        int deplacement = nombre_aleatoire(1, 4);
 
-        pos_x += deplacement_x;
-        pos_y += deplacement_y;
-
-        // Verification que le deplacement est non-nul
-        if (deplacement_x || deplacement_y) {
-            nombre_deplacements++;
+        switch (deplacement) {
+            case 1:
+                pos_x++;
+                break;
+            case 2:
+                pos_x--;
+                break;
+            case 3:
+                pos_y++;
+                break;
+            case 4:
+                pos_y--;
+                break;
+            default:
+                break;
         }
+
+        nombre_deplacements++;
     }
 
     printf("%d deplacements ont ete effectues avant de sortir du cercle de rayon %d.\n",
