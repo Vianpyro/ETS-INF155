@@ -20,7 +20,7 @@ int main(void) {  // La fonction main ne retourne rien "void"
     int a;
 
     scanf("%d", &a);  // On donne l'adresse (pointeur) pour stocker une valeur
-    // MAX = 2 * a;   // On ne peut tout simplement pas multiplier une macro
+    // MAX = 2 * a;   // On ne peut tout simplement pas changer la valeur une macro
 
     printf("resultat = %d\n", a);  // On veut afficher la variable a, pas la macro MAX
 
