@@ -35,11 +35,10 @@ int main(void) {
                 "%d est le maximum,\n",
                 compte, minimum, maximum);
             break;
-        } else if (valeur > maximum) {
+        } else if (valeur > maximum)
             maximum = valeur;
-        } else if (valeur < minimum) {
+        else if (valeur < minimum)
             minimum = valeur;
-        }
 
         compte++;
     }
