@@ -7,27 +7,22 @@
 #include <stdlib.h>
 #include <time.h>
 
-// Mode: optimisation de la RAM
-int nb_termes1(int max) {
-    int somme = 0;
-    uint16_t i;
-    while ((somme += i++) < max)
-        ;
-    return i;
+// Mode: ET binaire
+int is_even1(int value) {
+    return value & 1;
 }
 
-// Mode: optimisation du CPU
-int nb_termes2(int max) {
-    int somme = 0, i = 1;
-    while ((somme += i++) < max)
-        ;
-    return i;
+// Mode: modulo 2
+int is_even2(int value) {
+    return value % 2;
 }
 
 double timeit(int max, int (*func)(int)) {
     clock_t start, end;
     start = clock();
-    func(max);
+    for (int i = 0; i < max; i++) {
+        func(i);
+    }
     end = clock();
     return (double)(end - start) / CLOCKS_PER_SEC;
 }
@@ -35,8 +30,8 @@ double timeit(int max, int (*func)(int)) {
 int main(void) {
     int max_value = INT_MAX;  // Choose the maximum value for testing
 
-    double time_taken1 = timeit(max_value, nb_termes1);
-    double time_taken2 = timeit(max_value, nb_termes2);
+    double time_taken1 = timeit(max_value, is_even1);
+    double time_taken2 = timeit(max_value, is_even2);
 
     printf("Execution time for the first function: %.4f seconds\n", time_taken1);
     printf("Execution time for the second function: %.4f seconds\n", time_taken2);
