@@ -5,9 +5,8 @@
     Si le nombre est dans l'intervalle [MIN, MAX], ajouter ce nombre a la somme. Sinon, afficher un message d'erreur.
     Finalement, afficher la somme obtenue a l'ecran.
 */
-
-#include <stdio.h> // #include <stdio.h> pour les fonctions d'entr�e/sortie
-#include <stdlib.h> // Pour les fonctions d'entr�e/sortie et la fonction `system()`
+#include <stdio.h>   // #include <stdio.h> pour les fonctions d'entr�e/sortie
+#include <stdlib.h>  // Pour les fonctions d'entr�e/sortie et la fonction `system()`
 
 #define FIN 0
 #define MIN 1

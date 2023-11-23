@@ -1,5 +1,5 @@
 /*
-
+    Maximum de n valeurs
 */
 #include <stdio.h>
 #include <stdlib.h>
@@ -8,7 +8,7 @@ int saisir_nombre_positif(void);
 int lire_obtenir_max(int n);
 
 int main(void) {
-    unsigned int n; // Doit etre positif
+    unsigned int n;  // Doit etre positif
     float max;
 
     n = saisir_nombre_positif();
