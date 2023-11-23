@@ -1,4 +1,7 @@
-# 
+# Generated files
+*.txt
+
+# IDE settings folder
 .vscode/
 
 # Exercices
