@@ -2,7 +2,6 @@
     Ecrire une fonction qui copie un tableau dans un autre.
     La fonction reçoit en parametres deux tableaux ainsi que le nombre d'elements a copier.
 */
-#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>

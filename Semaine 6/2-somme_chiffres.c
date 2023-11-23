@@ -1,7 +1,6 @@
 /*
     But du programme: de saisir une chaine de caracteres et afficher la somme.
 */
-#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>   // Pour la fonction printf et scanf
 #include <stdlib.h>  // Pour la macro EXIT_SUCCESS et la fonction system
 

@@ -1,7 +1,6 @@
 /*
     Calcul de la moyenne d'une liste de nombres
 */
-#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <stdlib.h>
 

@@ -1,7 +1,6 @@
 /*
     Modifier le programme de l'exercice 1 afin qu'il affiche le tableau en partant du dernier element.
 */
-#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <stdlib.h>
 

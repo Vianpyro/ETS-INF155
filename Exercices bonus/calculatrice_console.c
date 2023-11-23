@@ -9,7 +9,6 @@
         - Utiliser des declarations conditionnelles (if/else) pour effectuer l'operation appropriee en fonction du caractere de l'operation.
         - Afficher le resultat.
 */
-#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <stdlib.h>
 

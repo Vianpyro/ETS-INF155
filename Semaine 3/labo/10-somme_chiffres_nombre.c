@@ -3,7 +3,6 @@
     Doit faire appel aux fonctions des numeros 8 et 9 pour faire cette somme
         (i.e. selon le nombre de chiffres du nombre, on fait la somme de chaque chiffre recupere avec la fonction du #9)
 */
-#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <stdlib.h>
 

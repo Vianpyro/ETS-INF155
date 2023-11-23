@@ -10,7 +10,6 @@
             - Multiplier a par 2 en utilisant le pointeur ptr_a, puis afficher le resultat.
             - Diviser b par 2 en utilisant le pointeur ptr_b, puis afficher le resultat.
 */
-#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <stdlib.h>
 

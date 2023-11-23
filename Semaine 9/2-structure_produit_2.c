@@ -1,7 +1,6 @@
 /*
     But du programme: Exercice de creation de structures
 */
-#define _CRT_SECURE_NO_WARNINGS
 #include <stdlib.h>
 
 #define LONGUEUR_NUM_SERIE 11

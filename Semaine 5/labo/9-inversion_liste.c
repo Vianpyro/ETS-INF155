@@ -3,7 +3,6 @@
     Le premier element devient le dernier, le dernier devient le premier, le second devient l'avant dernier, etc.
     La fonction reçoit en parametres le tableau a renverser ainsi que le nombre d'elements dans le tableau.
 */
-#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>

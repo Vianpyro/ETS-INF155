@@ -6,7 +6,6 @@
     La boucle se termine lorsque le nombre est valide.
     On affiche ensuite ce nombre.
 */
-#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h> // #include <stdio.h> pour les fonctions d'entree/sortie
 #include <stdlib.h> // Pour les fonctions d'entree/sortie et la fonction `system()`
 

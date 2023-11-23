@@ -1,7 +1,6 @@
 /*
     Programme de calcul de la suite de fibonnachi
 */
-#define _CRT_SECURE_NO_WARNINGS
 #include <assert.h>
 #include <stdio.h>
 #include <stdlib.h>

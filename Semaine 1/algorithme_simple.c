@@ -5,7 +5,6 @@
     La COOP offre 10% de reduction si le montant total des achats depasse $100.00.
     On applique ensuite les taxes (TPS & TVQ) de 15%.
 */
-#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h> // #include <stdio.h> pour les fonctions d'entree/sortie
 #include <stdlib.h> // Pour les fonctions d'entree/sortie et la fonction `system()`
 

@@ -6,7 +6,6 @@
     Il affiche la copie inversee ainsi que le tableau original.
     UTILISER LES FONCTIONS DES 6 NUMEROS PRECEDENTS.
 */
-#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>

@@ -6,7 +6,6 @@
     Finalement, le programme fait une copie du tableau et affiche la copie sur
         10 lignes et 20 colonnes.
 */
-#define _CRT_SECURE_NO_WARNINGS
 #include <stdint.h>  // Pour le uint8_t, allant de 0 a 255: optimisation pour le fun
 #include <stdio.h>
 #include <stdlib.h>

@@ -1,7 +1,6 @@
 /*
     Ecrire une fonction qui retourne le nombre d'elements positifs dans un tableau et afficher leur somme.
 */
-#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <stdlib.h>
 

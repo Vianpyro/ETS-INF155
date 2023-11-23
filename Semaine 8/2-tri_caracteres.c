@@ -1,7 +1,6 @@
 /*
     But du programme: Saisie d'une chaine de caracteres au clavier, affichage des chiffres seulement
 */
-#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <stdlib.h>
 

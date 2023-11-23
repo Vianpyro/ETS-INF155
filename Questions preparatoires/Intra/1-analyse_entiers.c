@@ -9,7 +9,6 @@
     Si la liste est vide (donc, commence immediatement avec une valeur negative)
         le programme affiche 0, 0, 0.
 */
-#define _CRT_SECURE_NO_WARNINGS
 #include <stdint.h>  // Optimisation pour le fun
 #include <stdio.h>
 #include <stdlib.h>

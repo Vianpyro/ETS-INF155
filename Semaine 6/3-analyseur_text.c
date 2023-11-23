@@ -1,7 +1,6 @@
 /*
     But du programme: Analyser une chaine de characteres et categoriser le type de chaque charactere
 */
-#define _CRT_SECURE_NO_WARNINGS
 #include <ctype.h>   // Pour les fonctions isalpha, isdigit, isspace, ispunct
 #include <stdio.h>   // Pour la fonction printf
 #include <stdlib.h>  // Pour la macro EXIT_SUCCESS et la fonction system

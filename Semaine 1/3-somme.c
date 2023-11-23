@@ -6,7 +6,6 @@
     Finalement, afficher la somme obtenue a l'ecran.
 */
 
-#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h> // #include <stdio.h> pour les fonctions d'entr�e/sortie
 #include <stdlib.h> // Pour les fonctions d'entr�e/sortie et la fonction `system()`
 

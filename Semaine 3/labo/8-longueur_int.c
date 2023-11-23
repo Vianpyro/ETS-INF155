@@ -2,7 +2,6 @@
     Fonction reçoit un entier positif et retourne nombre de chiffres presents dans le nombre (i.e. 123400 -> 6 chiffres).
     Dans « main », saisir un entier positif au clavier, appel a la fonction et affichage du resultat.
 */
-#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <stdlib.h>
 

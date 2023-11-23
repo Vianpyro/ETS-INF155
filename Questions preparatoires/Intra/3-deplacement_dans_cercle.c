@@ -10,7 +10,6 @@
     AIDE : Generez un nombre aleatoire dans l'intervalle [0, 3] pour connaitre
         la direction a prendre.
 */
-#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>

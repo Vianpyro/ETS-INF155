@@ -1,7 +1,6 @@
 /*
     But du programme: Exercice d'allocation dynamique de memoire
 */
-#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>  // Pour `strcpy`

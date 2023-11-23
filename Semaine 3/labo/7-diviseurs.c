@@ -3,7 +3,6 @@
     La fonction retourne le nombre de diviseurs affiches.
     Dans « main », saisir un entier au clavier, appel a fonction et affichage du resultat.
 */
-#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <stdlib.h>
 

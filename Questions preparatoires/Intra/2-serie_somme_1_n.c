@@ -5,7 +5,6 @@
         depasse la valeur "max" recue en parametre.
     La serie est definie comme la somme des valeurs de 1 a n.
 */
-#define _CRT_SECURE_NO_WARNINGS
 #include <stdint.h>
 #include <stdio.h>
 #include <stdlib.h>

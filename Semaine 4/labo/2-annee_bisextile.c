@@ -1,7 +1,6 @@
 /*
     Annee bisextile (meme exercice qu'a la semaine 3 donc copie/colle...)
 */
-#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <stdlib.h>
 

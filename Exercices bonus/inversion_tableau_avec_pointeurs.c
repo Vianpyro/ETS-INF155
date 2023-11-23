@@ -6,7 +6,6 @@
         - Ecrire une fonction qui prend en entree un tableau et sa taille, puis inverse l'ordre des elements du tableau en utilisant des pointeurs.
         - Afficher le tableau inverse pour verifier que le programme fonctionne correctement.
 */
-#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <stdlib.h>
 

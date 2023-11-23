@@ -4,7 +4,6 @@
         100 dans le tableau. Finalement, il affiche le plus petit et le plus
         grand element du tableau.
 */
-#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>

@@ -1,7 +1,6 @@
 /*
     Valider un nombre entre 1 et 10 puis calculer au factoriel
 */
-#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <stdlib.h>
 

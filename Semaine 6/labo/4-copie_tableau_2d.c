@@ -3,7 +3,6 @@
     La fonction reçoit en parametres les deux tableaux ainsi que le nombre
     de lignes a copier.
 */
-#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>

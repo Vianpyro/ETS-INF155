@@ -3,7 +3,6 @@
         le nombre de lignes et le nombre de colonnes du tableau. La fonction
         retourne le plus petit element du tableau.
 */
-#define _CRT_SECURE_NO_WARNINGS
 #include <assert.h>
 #include <math.h>
 #include <stdio.h>
