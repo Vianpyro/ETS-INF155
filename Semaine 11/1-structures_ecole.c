@@ -98,7 +98,7 @@ int main(void) {
 int nb_cours_total(const t_ecole* ecole) {
     int nb_cours = 0;
 
-    for (int i = 0; ecole->nb_ens; i++)
+    for (int i = 0; i < ecole->nb_ens; i++)
         nb_cours += ecole->enseignants[i].nb_cours;
 
     return nb_cours;
