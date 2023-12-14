@@ -14,6 +14,6 @@ typedef struct {
 
 typedef struct {
     t_adresse adresse;
-    t_appartement appartement;
+    t_appartement *appartement;
     unsigned int nb_appart;
 } t_bloc;
